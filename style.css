@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 1140px;
+  width: 1147px;
   margin: 0 auto;
 }
 
@@ -138,6 +138,13 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+}
+
+.collection .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .collection .collection-title {
   margin-bottom: 30px;
@@ -334,4 +341,91 @@ body {
   top: 50%;
   left: 50%;
   transition: 0.4s ease-in-out;
+}
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .nav-section .navbar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-section .navbar .website-name h5 {
+    margin-bottom: 10px;
+  }
+  .nav-section .navbar .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-section .navbar .nav-menu ul li {
+    margin-bottom: 5px;
+  }
+
+  .header-section .header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-section .header .header-info {
+    padding-right: 0px;
+    margin-bottom: 80px;
+  }
+  .header-section .header .header-info p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .collection .all-collections {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .collection .see-more {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .nav-section .navbar {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .nav-section .navbar .website-name h5 {
+    margin-bottom: 10px;
+  }
+  .nav-section .navbar .nav-menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-section .navbar .nav-menu ul li {
+    margin-bottom: 5px;
+  }
+  .header-section .header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-section .header .header-info {
+    padding-right: 0px;
+    margin-bottom: 80px;
+  }
+  .header-section .header .header-info p {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .collection .all-collections {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .collection .see-more {
+    display: flex;
+    justify-content: center;
+  }
 }
