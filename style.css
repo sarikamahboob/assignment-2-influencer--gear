@@ -124,7 +124,7 @@ body {
 
 .header-section .header .header-img img {
   background-image: url(images/Circle\ design.svg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -225,6 +225,7 @@ body {
   padding-right: 43px;
 }
 .collection .see-more a {
+  text-decoration: none;
   color: #e02c6d;
   font-size: 16px;
   font-weight: 700;
@@ -281,6 +282,7 @@ body {
   font-weight: 600;
   transition: 0.5s ease-in-out;
   border: 2px solid #e02c6d;
+  cursor: pointer;
 }
 .contact-us .submit:hover {
   background-color: white;
